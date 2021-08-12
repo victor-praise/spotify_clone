@@ -5,7 +5,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import SearchIcon from '@material-ui/icons/Search';
 import LibraryMusicIcon from '@material-ui/icons/LibraryMusic';
 import { useDataLayerValue } from '../helper/DataLayer';
-import { useEffect } from 'react';
+
 function Sidebar() {
     const [{ playlists }] = useDataLayerValue();
     return (
