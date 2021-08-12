@@ -17,7 +17,7 @@ function Footer({ spotify }) {
       
       
   useEffect(() => {
-      console.log('testing');
+      //console.log('testing');
     spotify.getMyCurrentPlaybackState().then((r) => {
       console.log(r);
 
@@ -31,8 +31,9 @@ function Footer({ spotify }) {
         item: r.item,
       });
     });
+    
 
-  }, []);
+  }, [spotify]);
 
    const handlePlayPause = () => {
     if (playing) {

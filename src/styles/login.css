@@ -15,3 +15,16 @@
     color: white;
     text-decoration: none;
 }
+.mobile__message{
+    display: none;
+}
+
+@media screen and (max-width:700px){
+       .login{
+           display:none;
+       }
+       .mobile__message{
+           display: block;
+           text-align: center;
+       }
+}   
