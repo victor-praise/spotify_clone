@@ -1,9 +1,10 @@
 import React from 'react'
 import '../styles/body.css'
-function Body() {
+import Header from './Header'
+function Body({spotify}) {
     return (
         <div className="body">
-            no other body
+            <Header spotify={spotify} />
         </div>
     )
 }
